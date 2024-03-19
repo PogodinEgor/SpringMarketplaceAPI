@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: RestProductService
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/prod_category
+    username: postgres
+    password: ****
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+server:
+  port: 9090
+
+springdoc:
+  swagger-ui:
+    supportedSubmitMethods: ["get", "put", "post", "delete", "patch"]
+
+your:
+  custom:
+    prefix:
+      SECRET_KEY: "********************************************************"
