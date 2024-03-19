@@ -1,4 +1,4 @@
-package com.example.restproductservice.exception.hendler;
+package com.example.restproductservice.exception.handler;
 
 
 import com.example.restproductservice.exception.*;
